@@ -8,8 +8,10 @@
         "lint": "eslint ."
     },
     "dependencies": {
+        "@react-native-community/async-storage": "^1.6.1",
         "react": "16.8.6",
-        "react-native": "0.60.5"
+        "react-native": "0.60.5",
+        "reactotron-react-native": "^4.0.0"
     },
     "devDependencies": {
         "@babel/core": "^7.6.0",
