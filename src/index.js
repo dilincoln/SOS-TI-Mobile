@@ -1,22 +1,31 @@
 import React from 'react'
-import { PersistGate } from 'redux-persist/integration/react'
-import { Provider } from 'react-redux'
-import { StatusBar } from 'react-native'
-import { Toast } from 'react-native-redux-toast'
+import { StyleSheet, View, Text } from 'react-native'
 
 import './config/ReactotronConfig'
 
-import { store, persistor } from './store'
-import App from './App'
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    },
+})
 
-export default function Index() {
+console.tron.log('Hello Tron')
+
+export default function App() {
     return (
-        <Provider store={store}>
-            <PersistGate persistor={persistor}>
-                <StatusBar barStyle="light-content" backgroundColor="#1c1d21" />
-                <Toast />
-                <App />
-            </PersistGate>
-        </Provider>
+        <>
+            <View style={styles.container}>
+                <Text style={styles.welcome}>Seja bem vindo</Text>
+                <Text style={styles.welcome}>React Native!</Text>
+            </View>
+        </>
     )
 }

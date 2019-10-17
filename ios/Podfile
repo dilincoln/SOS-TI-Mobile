@@ -34,6 +34,10 @@ target 'sosmobile' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of 49023fd... Backup 0.60.5 to upgrade to 0.61.2
   target 'sosmobileTests' do
     inherit! :search_paths
     # Pods for testing
