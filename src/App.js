@@ -3,10 +3,12 @@ import { useSelector } from 'react-redux'
 
 import createRouter from './routes'
 
-export default function App() {
+const App: () => React$Node = () => {
     const { signed, provider } = useSelector(state => state.auth)
 
     const Routes = createRouter(signed, provider)
 
     return <Routes />
 }
+
+export default App
